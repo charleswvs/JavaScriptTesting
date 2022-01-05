@@ -7,5 +7,6 @@
   "lines": 100,
   "functions": 100,
   "statements": 100,
-  "checkCoverage": true
+  "checkCoverage": true,
+  "exclude": ["src/repository/base/*.js"]
 }

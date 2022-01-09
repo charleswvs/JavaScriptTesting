@@ -1,6 +1,5 @@
 const { describe, it, before, beforeEach, afterEach } = require('mocha');
 const { join }  = require('path');
-const assert = require('assert');
 const { expect }  = require('chai');
 let { sandbox } = require('sinon');
 const sinon = require('sinon');

@@ -7,17 +7,22 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha -w --parallel **/**/*.test.js",
-    "test:cov": "npx nyc npx mocha --parallel **/**/*.test.js"
+    "test": "NODE_ENV=test npx mocha -w --parallel **/**/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha --parallel **/**/*.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/supertest": "^2.0.11",
     "chai": "^4.3.4",
     "faker": "^5.5.3",
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
     "sinon": "^9.2.4"
+  },
+  "dependencies": {
+    "supertest": "^6.1.6"
   }
 }

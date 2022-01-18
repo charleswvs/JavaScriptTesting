@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js",
+    "test": "NODE_ENV=test npx mocha -w --parallel test/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha -r reify --parallel test/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "chalk-table": "^1.0.2",
+    "draftlog": "^1.0.13"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "reify": "^0.20.12",
+    "sinon": "^9.2.4"
+  }
+}

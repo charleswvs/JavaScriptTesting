@@ -32,7 +32,7 @@ describe('CarService Suite Tests', () => {
     sandbox.restore();
   })
 
-  it('shoud retrieve a random postition from an array', async () => {
+  it('should retrieve a random postition from an array', async () => {
     const data = [0, 1, 2, 3, 4, 5];
     const result = carService.getRandomPositionFromArray(data);
 

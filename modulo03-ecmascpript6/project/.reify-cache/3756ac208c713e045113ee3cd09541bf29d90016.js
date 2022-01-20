@@ -1,17 +1,17 @@
-import readlineModule from 'readline';
-import DraftLog from 'draftlog';
-import chalk from 'chalk';
-import chalkTable from 'chalk-table';
+"use strict";module.export({default:()=>TerminalController});var readlineModule;module.link('readline',{default(v){readlineModule=v}},0);var DraftLog;module.link('draftlog',{default(v){DraftLog=v}},1);var chalk;module.link('chalk',{default(v){chalk=v}},2);var chalkTable;module.link('chalk-table',{default(v){chalkTable=v}},3);var Person;module.link('./person.js',{default(v){Person=v}},4);
 
-import Person from './person.js';
 
-export default class TerminalController {
+
+
+
+
+class TerminalController {
   constructor({
     readline = readlineModule,
   } = {}) {
     this.print = {};
     this.terminal = {};
-    this.data = [];
+    this.data = {};
     this.readline = readline;    
   }
 

@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js",
-    "test": "NODE_ENV=test npx mocha -w --parallel test/*.test.js",
-    "test:cov": "NODE_ENV=test npx nyc npx mocha -r reify --parallel test/*.test.js"
+    "test": "NODE_ENV=test npx mocha -w --experimental-json-modules --parallel test/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha -r reify  --parallel test/*.test.js"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,7 @@
-import mocha from 'mocha';
+"use strict";var mocha;module.link('mocha',{default(v){mocha=v}},0);var chai;module.link('chai',{default(v){chai=v}},1);var Person;module.link('./../src/person.js',{default(v){Person=v}},2);
 const { describe, it } = mocha;
-import chai from 'chai';
-import Person from './../src/person.js';
+
+
 const { expect } = chai;
 
 describe('Person', () => {

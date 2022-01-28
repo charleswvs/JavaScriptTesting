@@ -1,10 +1,10 @@
-import { expect } from 'chai';
-import sinon from 'sinon';
-import Person from '../src/person.js';
-import TerminalController from '../src/terminalController.js';
-import validDatabaseItem  from './mocks/valid-databaseItem.js';
-import readline from 'readline';
-import mocha from 'mocha';
+"use strict";var expect;module.link('chai',{expect(v){expect=v}},0);var sinon;module.link('sinon',{default(v){sinon=v}},1);var Person;module.link('../src/person.js',{default(v){Person=v}},2);var TerminalController;module.link('../src/terminalController.js',{default(v){TerminalController=v}},3);var validDatabaseItem;module.link('./mocks/valid-databaseItem.js',{default(v){validDatabaseItem=v}},4);var readline;module.link('readline',{default(v){readline=v}},5);var mocha;module.link('mocha',{default(v){mocha=v}},6);
+
+
+
+
+
+
 const { describe, it } = mocha;
 
 const mocks = {
